@@ -8,53 +8,120 @@
     <title>WebAgency</title>
     <link rel="icon" href="./assets/img/ico/favicon.ico">
     <link href="./assets/css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8a16152397.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="nav-bar">
     <div class="nav-content">
-
-        <img src="./assets/img/logo.png">
-
+        <a href="./index.html">
+            <img src="./assets/img/logo.png">
+        </a>
         <div class="alignright">
-            <a class="active" href="#accueil">Accueil</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a class="nav-link active" href="#accueil">Accueil</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </div>
-
-
     </div>
 </nav>
 
 <!-- Accueil -->
-<section id="accueil">
-    <div class="slider">
-        <span id="bg-1"></span>
-        <span id="bg-2"></span>
-        <div class="slider-img">
+<div id="accueil">
+    <div class="slider-container">
+        <input class="display-none" type="radio" id="i1" name="images" checked/>
+        <input class="display-none" type="radio" id="i2" name="images" />
+        <div class="slide-img" id="first">
             <img src="./assets/img/slider/bg1.jpg">
-            <img src="./assets/img/slider/bg2.jpg">
+            <label class="prev" for="i1"><span>&#x2039;</span></label>
+            <label class="next" for="i2"><span>&#x203a;</span></label>
         </div>
-        <a href="#bg-1"></a>
-        <a href="#bg-2"></a>
+        <div class="slide-img" id="second">
+            <img src="./assets/img/slider/bg2.jpg">
+            <label class="prev" for="i1"><span>&#x2039;</span></label>
+            <label class="next" for="i2"><span>&#x203a;</span></label>
+        </div>
+        <div class="display-none" id="nav_slide">
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+        </div>
+        <div class="slider-text-container">
+            <div class="slider-title">
+                <span class="title blue">Webagency</span><span class="title white"> : L'agence de tous vos projets !</span>
+            </div>
+            <div class="slider-description">
+                <span class="white bold">Vous avez une projet web ? La WebAgency vous aide à le réaliser</span>
+            </div>
+            <button class="slider-button bold">Plus d'infos</button>
+        </div>
     </div>
-</section>
+</div>
 
-<section id="services">
+<!-- Services -->
+<div id="services">
+    <div class="title-container">
+        <h1 class="title black">Nos services</h1>
+    </div>
+    <hr class="separator">
+    <div class="description-container">
+        <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</i></p>
+    </div>
+    <div class="services-container">
+        <img class="left-img" src="assets/img/main-feature.png">
+        <div class="services-cards">
+            <div class="card">
+                <span class="card-title alignleft">UX design</span>
+                <p class="card-description alignleft grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum eos esse magni quaerat</p>
+                <div class="circle">
+                    <i class="fas fa-chart-line icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-title alignleft">UI design</span>
+                <p class="card-description alignleft grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum eos esse magni quaerat</p>
+                <div class="circle">
+                    <i class="fas fa-paint-brush icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-title alignleft">SEO</span>
+                <p class="card-description alignleft grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum eos esse magni quaerat</p>
+                <div class="circle">
+                    <i class="fas fa-chart-pie icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-</section>
+<!-- Projets -->
+<div id="portfolio">
+    <div class="title-container">
+        <h1 class="title black">Nos projets</h1>
+    </div>
+    <hr class="separator">
+    <div class="description-container">
+        <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</i></p>
+    </div>
+    <div class="button-group">
+        <button>All works</button><!--
+    --><button>Corporate</button><!--
+    --><button>Portfolio</button>
+    </div>
+    <div class="test"></div>
+</div>
 
-<section id="portfolio">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-</section>
 
-<section id="contact">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum in perspiciatis ratione. Ab ad aspernatur officia quos sapiente ullam. Aliquid corporis eum expedita laboriosam laborum praesentium, quam sit velit?
-</section>
-<!-- FOOTER -->
-<footer>
-    coucou je suis le footer
-</footer>
 </body>
 </html>
