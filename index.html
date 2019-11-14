@@ -7,10 +7,7 @@
 
     <title>WebAgency</title>
     <link rel="icon" href="./assets/img/ico/favicon.ico">
-    <link href="./assets/css/style.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/8a16152397.js" crossorigin="anonymous"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -22,10 +19,10 @@
             <img src="./assets/img/logo.png">
         </a>
         <div class="alignright">
-            <a class="nav-link active" href="#accueil">Accueil</a>
-            <a class="nav-link" href="#services">Services</a>
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a id="l1" class="nav-link active" href="#accueil">Accueil</a>
+            <a id="l2" class="nav-link" href="#services">Services</a>
+            <a id="l3" class="nav-link" href="#portfolio">Portfolio</a>
+            <a id="l4" class="nav-link" href="#contact">Contact</a>
         </div>
     </div>
 </nav>
@@ -33,22 +30,12 @@
 <!-- Accueil -->
 <div id="accueil">
     <div class="slider-container">
-        <input class="display-none" type="radio" id="i1" name="images" checked/>
-        <input class="display-none" type="radio" id="i2" name="images" />
-        <div class="slide-img" id="first">
-            <img src="./assets/img/slider/bg1.jpg">
-            <label class="prev" for="i1"><span>&#x2039;</span></label>
-            <label class="next" for="i2"><span>&#x203a;</span></label>
+        <div class="slide-img">
+            <img id="first" src="assets/img/slider/bg1.jpg">
+            <img style="display: none" id="second" src="assets/img/slider/bg2.jpg">
         </div>
-        <div class="slide-img" id="second">
-            <img src="./assets/img/slider/bg2.jpg">
-            <label class="prev" for="i1"><span>&#x2039;</span></label>
-            <label class="next" for="i2"><span>&#x203a;</span></label>
-        </div>
-        <div class="display-none" id="nav_slide">
-            <label for="i1" class="dots" id="dot1"></label>
-            <label for="i2" class="dots" id="dot2"></label>
-        </div>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
         <div class="slider-text-container">
             <div class="slider-title">
                 <span class="title blue">Webagency</span><span class="title white"> : L'agence de tous vos projets !</span>
@@ -108,11 +95,21 @@
         <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</i></p>
     </div>
     <div class="button-group">
-        <button>All works</button><!--
-    --><button>Corporate</button><!--
-    --><button>Portfolio</button>
+        <button class="btn btn-active" id="btn-all">All works</button><!--
+    --><button class="btn" id="btn-creative">Creative</button><!--
+    --><button class="btn" id="btn-corporate">Corporate</button><!--
+    --><button class="btn" id="btn-portfolio">Portfolio</button>
     </div>
-    <div class="test"></div>
+    <div class="works-container">
+        <img id="p1" alt="01.jpg" src="assets/img/portfolio/01.jpg">
+        <img id="p2" alt="02.jpg" src="assets/img/portfolio/02.jpg">
+        <img id="p3" alt="03.jpg" src="assets/img/portfolio/03.jpg">
+        <img id="p2" alt="04.jpg" src="assets/img/portfolio/04.jpg">
+        <img id="p3" alt="05.jpg" src="assets/img/portfolio/05.jpg">
+        <img id="p1" alt="06.jpg" src="assets/img/portfolio/06.jpg">
+        <img id="p1" alt="07.jpg" src="assets/img/portfolio/07.jpg">
+        <img id="p2" alt="08.jpg" src="assets/img/portfolio/08.jpg">
+    </div>
 </div>
 
 <br>
@@ -122,6 +119,11 @@
 <br>
 <br>
 
+
+<!-- SCRIPT JS -->
+<script src="https://kit.fontawesome.com/8a16152397.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery-3.4.1.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
