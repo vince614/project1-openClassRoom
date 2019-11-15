@@ -1,5 +1,16 @@
 /*
 ----------------------------------------------------------
+                        FONTS
+----------------------------------------------------------
+*/
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    src: url(../fonts/fontawesome-webfont.woff);
+}
+
+/*
+----------------------------------------------------------
                           COLOR
 ----------------------------------------------------------
 */
@@ -345,6 +356,9 @@ hr.separator:after {
 ----------------------------------------------------------
 */
 
+#portfolio {
+    display: block;
+}
 
 .button-group {
     margin: 50px auto;
@@ -395,15 +409,66 @@ hr.separator:after {
     text-align: center;
 }
 
-.works-container img{
+.img-container {
     width: 300px;
     height: 200px;
     padding: 15px;
+    display: inline-block;
 }
 
-.works-container img:hover{
-    cursor: pointer;
+.works-container img{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
+
+.container-hover-image {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    width: 300px;
+    height: 70px;
+    background-color: black;
+    bottom: 75px;
+}
+
+.img-circle {
+    position: absolute;
+    bottom: 45px;
+    left: 240px;
+    width: 40px;
+    height: 40px;
+    background: #5cadd2;
+    border-radius: 50%;
+    border: solid 3px white;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-circle:after {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    content: "\f06e";
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+.img-container:hover .container-hover-image{
+    cursor: pointer;
+    opacity: .6;
+}
+
+.img-text {
+    color: white;
+    float: left;
+    margin: 5px 20px;
+}
+
+
+
 
 /*
 ----------------------------------------------------------
@@ -411,13 +476,16 @@ hr.separator:after {
 ----------------------------------------------------------
 */
 
+#contact {
+    display: block;
+}
+
 .maps-container {
     width: 90%;
     margin: 0 auto;
     height: 700px;
     background-image: url('../img/maps.png');
     background-size: cover;
-    /*background-color: #5cadd2;*/
 }
 
 .contact-card {
@@ -493,8 +561,6 @@ hr.separator:after {
 
 .contact-button:hover {
     cursor: pointer;
-}
-
 }
 
 /*
