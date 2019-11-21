@@ -50,4 +50,20 @@ $(document).ready(function(){
             slider();
         }
     })
+
+    //Responsive navbar
+    $('.bar').click(() => {
+        let display = $('#responsive-nav').css('display');
+        if(display === 'none') {
+            $('#responsive-nav').removeClass('display-none');
+            console.log('test')
+        }else {
+            $('#responsive-nav').addClass('display-none');
+        }
+    })
+
+    //Click on link-responsive
+    $('.nav-link-responsive').click(() => {
+        $('#responsive-nav').addClass('display-none');
+    })
 });

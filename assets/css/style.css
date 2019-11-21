@@ -161,6 +161,10 @@ hr.separator:after {
     border-top: solid 4px #5cadd2;
 }
 
+.bar {
+    display: none;
+}
+
 /*
 ----------------------------------------------------------
                     ACCEUIL - SLIDER
@@ -404,7 +408,6 @@ hr.separator:after {
 
 .works-container {
     width: 80%;
-    height: 500px;
     margin: 0 auto;
     text-align: center;
 }
@@ -584,31 +587,85 @@ hr.separator:after {
 ----------------------------------------------------------
 */
 
-@media screen and (max-width: 685px){
-    .slider-container{
-        border: none;
-        width: 100%;
-        height: 0;
-        padding-bottom: 55%;
+@media screen and (max-width: 850px){
+
+    hr.separator {
+        width: 40%;
     }
 
-    label span {
-        font-size: 50pt;
-    }
+    /* NAVBAR */
 
-    .prev, .next{
-        width: 15%;
-    }
-    #nav_slide .dots{
-        width: 12px;
-        height: 12px;
-    }
-}
-@media screen  and(min-width: 970px){
-
-    .me{
+    .nav-link, a.active {
         display: none;
     }
+
+    .bar {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        padding: 33px 20px;
+        color: #959595;
+    }
+
+    .responsive-nav {
+        position: fixed;
+        top: 100px;
+        z-index: 10000;
+        width: 100%;
+        min-height: 100px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .nav-link-responsive {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color: #959595;
+        padding: 5px;
+    }
+
+    /* ACCUEIL */
+
+    #accueil {
+        display: none;
+    }
+
+    /* SERVICES */
+
+    .left-img {
+        display: none;
+    }
+
+    .services-container {
+        height: auto;
+    }
+
+    .services-cards {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .description-container {
+        width: 80%;
+    }
+
+    /* PROJETS */
+
+    .works-container {
+        width: 100%;
+    }
+
+
+
+
+}
+
+
+@media screen  and(min-width: 970px){
+
+
 
 }
 
