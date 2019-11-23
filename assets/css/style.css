@@ -87,7 +87,7 @@ hr.separator {
     overflow: visible;
     width: 20%;
     border: none;
-    border-top: solid 1px #5cadd2;
+    border-top: solid 1px #959595;
     color: #5cadd2;
     text-align: center;
 }
@@ -95,7 +95,7 @@ hr.separator:after {
      content: "●";
      display: inline-block;
      position: relative;
-     top: -0.7em;
+     top: -0.8em;
      font-size: 2.5em;
      padding: 0 0.25em;
      background: white;
@@ -370,6 +370,7 @@ hr.separator:after {
 }
 
 .btn {
+    position: relative;
     background-color: #e5e5e5;
     color: #959595;
     padding: 10px 24px;
@@ -381,7 +382,7 @@ hr.separator:after {
     border-left: none;
     border-right: none;
     border-top: none;
-    border-bottom: solid 4px rgba(0,0,0,0);;
+    border-bottom: solid 4px rgba(0,0,0,0); /* hidden bordure */
 }
 
 .btn:last-child {
@@ -398,6 +399,19 @@ hr.separator:after {
     background-color: #5cadd2;
     color: white;
     border-bottom: solid 4px rgba(0,0,0,.1);
+}
+
+.btn-active:after {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 40%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #539bbc;
 }
 
 .btn:hover {
@@ -433,7 +447,7 @@ hr.separator:after {
     position: relative;
     width: 300px;
     height: 70px;
-    background-color: black;
+    background-color: rgba(0,0,0,0);
     bottom: 75px;
 }
 
@@ -461,7 +475,8 @@ hr.separator:after {
 
 .img-container:hover .container-hover-image{
     cursor: pointer;
-    opacity: .6;
+    background-color: rgba(0,0,0,.6);
+    opacity: 1;
 }
 
 .img-text {
@@ -594,7 +609,6 @@ hr.separator:after {
     }
 
     /* NAVBAR */
-
     .nav-link, a.active {
         display: none;
     }
@@ -626,13 +640,36 @@ hr.separator:after {
     }
 
     /* ACCUEIL */
+    .slider-container {
+        padding-bottom: 10%;
+    }
 
-    #accueil {
+    .prev, .next{
         display: none;
     }
 
-    /* SERVICES */
+    .slider-title {
+        top: 100px;
+    }
 
+    .slider-description {
+        top: 50px;
+        width: 55%;
+    }
+
+    .slider-description span {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .slider-button {
+        top: 100px;
+    }
+
+    /* SERVICES */
     .left-img {
         display: none;
     }
@@ -652,7 +689,6 @@ hr.separator:after {
     }
 
     /* PROJETS */
-
     .works-container {
         width: 100%;
     }
