@@ -17,7 +17,7 @@
 <nav class="nav-bar">
     <div class="nav-content">
         <a href="./index.html">
-            <img src="./assets/img/logo.png">
+            <img class="logo" src="./assets/img/logo.png" alt="logo">
         </a>
         <div class="alignright">
             <a id="l1" class="nav-link active" href="#accueil">Accueil</a>
@@ -40,8 +40,8 @@
 <div id="accueil">
     <div class="slider-container">
         <div class="slide-img">
-            <img id="first" src="assets/img/slider/bg1.jpg">
-            <img style="display: none" id="second" src="assets/img/slider/bg2.jpg">
+            <img id="first" src="assets/img/slider/bg1.jpg" alt="firstImage">
+            <img style="display: none" id="second" src="assets/img/slider/bg2.jpg" alt="secondImage">
         </div>
         <a class="prev">‹</a>
         <a class="next">›</a>
@@ -55,6 +55,13 @@
             <button class="slider-button bold">Plus d'infos</button>
         </div>
     </div>
+    <div class="responsive-accueil">
+        <span class="title blue">Webagency</span><span class="title grey"> : L'agence de tous vos projets !</span>
+        <br/>
+        <span class="description-responsive bold grey">Vous avez une projet web ?</span>
+        <span class="description-responsive bold grey">La WebAgency vous aide à le réaliser</span>
+        <button class="slider-button bold">Plus d'infos</button>
+    </div>
 </div>
 
 <!-- Services -->
@@ -64,10 +71,10 @@
     </div>
     <hr class="separator">
     <div class="description-container">
-        <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</i></p>
+        <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</p>
     </div>
     <div class="services-container">
-        <img class="left-img" src="assets/img/main-feature.png">
+        <img class="left-img" src="assets/img/main-feature.png" alt="main-feature">
         <div class="services-cards">
             <div class="card">
                 <span class="card-title alignleft">UX design</span>
@@ -101,7 +108,7 @@
     </div>
     <hr class="separator">
     <div class="description-container">
-        <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</i></p>
+        <p class="black little-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque esse excepturi ipsam ipsum itaque laborum modi quae quidem repellat voluptates. Ad doloremque dolorum eaque facere incidunt ipsa officiis quae sapiente?</p>
     </div>
     <div class="button-group">
         <button class="btn btn-active" id="btn-all">All works</button><!--
@@ -184,20 +191,22 @@
     </div>
     <hr class="separator">
     <div class="maps-container">
-        <div class="contact-card">
-            <h2 class="contact-title">Contact Info</h2>
-            <div class="contact-info">
-                <span class="contact-text bold">WebAgency SAS</span>
-                <span class="contact-text">25 rue d'Hauteville 75010 Paris</span>
-                <span class="contact-text"><span style="border-bottom: dotted 1px black">Tel :</span> 01 02 03 04 05</span>
+        <div class="blue-filter">
+            <div class="contact-card">
+                <h2 class="contact-title">Contact Info</h2>
+                <div class="contact-info">
+                    <span class="contact-text bold">WebAgency SAS</span>
+                    <span class="contact-text">25 rue d'Hauteville 75010 Paris</span>
+                    <span class="contact-text"><span style="border-bottom: dotted 1px black">Tel :</span> 01 02 03 04 05</span>
+                </div>
+                <div class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <button class="contact-button">Send Message</button>
             </div>
-            <div class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Message"></textarea>
-            </div>
-            <button class="contact-button">Send Message</button>
         </div>
     </div>
 </div>

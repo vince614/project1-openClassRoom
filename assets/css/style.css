@@ -112,7 +112,6 @@ hr.separator:after {
 */
 
 .nav-bar {
-    overflow: hidden;
     background-color: #fff;
     height: 100px;
     width: 100%;
@@ -262,6 +261,10 @@ hr.separator:after {
 ----------------------------------------------------------
 */
 
+.responsive-accueil {
+    display: none;
+}
+
 #services {
     margin-top: 100px;
 }
@@ -324,7 +327,7 @@ hr.separator:after {
 
 .circle {
     width: 80px;
-    border: solid 1px #5cadd2;
+    border: solid 1px #959595;
     height: 80px;
     text-align:center;
     align-items: center;
@@ -506,6 +509,12 @@ hr.separator:after {
     background-size: cover;
 }
 
+.blue-filter {
+    background-color: rgba(92,173,210,.3);
+    width: 100%;
+    height: 100%;
+}
+
 .contact-card {
     z-index: 2;
     position: absolute;
@@ -545,7 +554,7 @@ hr.separator:after {
     color: rgba(0,0,0,.5);
     border-radius: 5px;
     border: solid 2px rgba(0,0,0,.2);
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     padding-left: 10px;
 }
@@ -556,7 +565,7 @@ hr.separator:after {
     border-radius: 5px;
     color: rgba(0,0,0,.5);
     border: solid 2px rgba(0,0,0,.2);
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     max-width: 90%;
     min-width: 90%;
@@ -649,11 +658,11 @@ hr.separator:after {
     }
 
     .slider-title {
-        top: 100px;
+        top: 80px;
     }
 
     .slider-description {
-        top: 50px;
+        top: 30px;
         width: 55%;
     }
 
@@ -666,7 +675,10 @@ hr.separator:after {
     }
 
     .slider-button {
-        top: 100px;
+        top: 40px;
+        font-size: 15px;
+        width: 20%;
+        height: 30px;
     }
 
     /* SERVICES */
@@ -693,16 +705,91 @@ hr.separator:after {
         width: 100%;
     }
 
-
-
-
 }
 
 
-@media screen  and(min-width: 970px){
+@media screen and (max-width: 550px){
 
+    /* ACCUEIL */
+    .logo {
+        width: 200px;
+        height: 43px;
+        position: relative;
+        top: 10px;
+    }
 
+    .title {
+        font-size: 17px;
+    }
 
+    .slider-container{
+        display: none;
+    }
+
+    .responsive-accueil{
+        display: block;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .description-responsive {
+        font-size: 15px;
+        display: block;
+        position: relative;
+        top: 20px;
+    }
+
+    .slider-button {
+        display: block;
+        width: 40%;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    /* SERVICES */
+    .services-container, .services-cards{
+        width: 100%;
+    }
+
+    .title-container {
+        margin-top: 100px;
+    }
+
+    /* PROJETS */
+    .btn {
+        padding: 10px 12px;
+    }
+
+    /* CONTACT */
+    .contact-card {
+        width: 300px;
+        margin: 30px 10%;
+    }
+
+}
+
+@media screen and (min-width: 2000px) {
+
+    body {
+        margin: 0 300px;
+    }
+
+    .nav-bar {
+        width: 80%;
+    }
+
+    .prev, .next{
+        background: none;
+        padding: 10px 20px;
+    }
+
+    .contact-card {
+        margin-right: 440px;
+    }
+    
 }
 
 
