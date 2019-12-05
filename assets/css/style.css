@@ -488,9 +488,6 @@ hr.separator:after {
     margin: 5px 20px;
 }
 
-
-
-
 /*
 ----------------------------------------------------------
                          CONTACT
@@ -502,7 +499,7 @@ hr.separator:after {
 }
 
 .maps-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: 700px;
     background-image: url('../img/maps.png');
